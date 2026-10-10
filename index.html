@@ -3,258 +3,166 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sezen Demirhan's academic website. Research in gender, health and ethics.">
-  <title>Sezen Demirhan | Academic Research</title>
-  <style>
-    :root {
-      --green: #304b40;
-      --sage: #e8ede7;
-      --cream: #faf9f6;
-      --text: #303630;
-      --muted: #6b746d;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      background: var(--cream);
-      color: var(--text);
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.75;
-    }
-    header {
-      max-width: 1080px;
-      margin: auto;
-      padding: 24px 28px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-    }
-    .brand {
-      color: var(--green);
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-decoration: none;
-    }
-    nav { display: flex; gap: 20px; flex-wrap: wrap; }
-    nav a, a { color: var(--green); }
-    nav a { text-decoration: none; font-size: 14px; }
-    .hero {
-      background: var(--sage);
-      padding: 100px 28px 90px;
-    }
-    .inner { max-width: 900px; margin: auto; }
-    .eyebrow {
-      color: var(--green);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 12px;
-      font-weight: bold;
-    }
-    h1 {
-      font-family: Georgia, "Times New Roman", serif;
-      color: var(--green);
-      font-size: clamp(42px, 7vw, 72px);
-      line-height: 1.12;
-      font-weight: normal;
-      margin: 18px 0;
-    }
-    h2 {
-      font-family: Georgia, "Times New Roman", serif;
-      color: var(--green);
-      font-size: 34px;
-      font-weight: normal;
-      line-height: 1.3;
-    }
-    .intro { max-width: 680px; font-size: 18px; }
-    .button {
-      display: inline-block;
-      margin: 18px 10px 0 0;
-      padding: 11px 19px;
-      background: var(--green);
-      color: white;
-      text-decoration: none;
-      border: 1px solid var(--green);
-    }
-    .button.secondary { background: transparent; color: var(--green); }
-    section { padding: 65px 28px; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-    }
-    .item {
-      padding: 22px;
-      border: 1px solid #dfe4dd;
-      background: white;
-    }
-    .item h3 { color: var(--green); margin-top: 0; }
-    .muted { color: var(--muted); font-size: 14px; }
-    .alt { background: #f0f1ec; }
-    footer {
-      padding: 28px;
-      text-align: center;
-      border-top: 1px solid #e1e3dd;
-      color: var(--muted);
-      font-size: 13px;
-    }
-    @media (max-width: 650px) {
-      header { align-items: flex-start; flex-direction: column; }
-      nav { gap: 12px; }
-      .hero { padding: 65px 24px; }
-      section { padding: 45px 24px; }
-      .grid { grid-template-columns: 1fr; }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sezen Demirhan — interdisciplinary researcher in gender, health and ethics.">
+  <title>Sezen Demirhan | Gender, Health &amp; Ethics</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <a class="brand" href="#">SEZEN DEMİRHAN</a>
-    <nav aria-label="Main navigation">
-      <a href="#CV">CV</a>
-      <a href="#research">Research interests</a>
+    <a class="brand" href="index.html">SEZEN DEMİRHAN</a>
+    <nav>
+      <a href="cv.html">CV</a>
+      <a href="#research">Research</a>
       <a href="#projects">Projects</a>
-      <a href="#Publications">Publications</a>
-      <a href="#Teach">Teach</a>
+      <a href="#publications">Publications</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <div class="inner">
-        <div class="eyebrow">Researcher</div>
-        <h1>Gender, Health & Ethics</h1>
+      <div class="hero-content">
+        <p class="eyebrow">Interdisciplinary researcher</p>
+        <h1>Gender, Health<br>&amp; Ethics</h1>
         <p class="intro">
-          I am an interdisciplinary researcher exploring the intersections
-          of gender, health and ethics. My work examines living
-          organ donation and organ transplantation.
+          I explore how gender, relationships, migration and inequalities
+          shape experiences of health, the body and organ transplantation.
         </p>
-        <a class="button" href="#research">Explore my research</a>
+        <a class="button" href="cv.html">View academic CV</a>
         <a class="button secondary" href="#publications">Selected publications</a>
+
+        <div class="social">
+          <a href="https://scholar.google.com/citations?user=RNHhGDMAAAAJ&amp;hl=tr" target="_blank" rel="noopener">Google Scholar ↗</a>
+          <a href="https://www.linkedin.com/in/sezen-demirhan-529598139/?locale=en" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://orcid.org/0000-0002-8999-8318" target="_blank" rel="noopener">ORCID ↗</a>
+        </div>
+      </div>
+
+      <div class="portrait">
+        <img src="profile-photo.jpg" alt="Sezen Demirhan">
+        <p>Your profile photo will appear here.</p>
       </div>
     </section>
 
     <section id="about">
-      <div class="inner">
-        <div class="eyebrow">About</div>
-        <h2>Researching bodies, relationships and inequalities</h2>
-        <p>
-          My research brings empirical inquiry into conversation with
-          questions of gender, health and ethics. 
-          
-    
-        </p>
-        <p>
-        
-        </p>
-      </div>
+      <p class="eyebrow">About</p>
+      <h2>Researching bodies, relationships and inequalities</h2>
+      <p>
+        My research brings empirical inquiry into conversation with questions
+        of gender, health and ethics. I study the social and ethical dimensions
+        of living organ donation and transplantation, with particular attention
+        to donors’ experiences, autonomy, care, migration and unequal responsibilities.
+      </p>
+      <p>
+        My wider interests include animal ethics, xenotransplantation,
+        and relationships between bodies, places and structural inequalities.
+      </p>
     </section>
 
-    <section id="research" class="alt">
-      <div class="inner">
-        <div class="eyebrow">Research interests</div>
-        <h2>Areas of inquiry</h2>
-        <div class="grid">
-          <article class="item">
-            <h3>Gender &amp; Health</h3>
-            <p>Gender, body and the social determinants of health.</p>
-          </article>
-          <article class="item">
-            <h3>Living Organ Donation</h3>
-            <p>Donor experiences, decision making and autonomy.</p>
-          </article>
-          <article class="item">
-            <h3>Transnational Transplantation</h3>
-            <p>Migration and the social and ethical dimensions of healthcare across borders.</p>
-          </article>
-          <article class="item">
-            <h3>Body &amp; Ethics</h3>
-            <p>Animal ethics and relationships between bodies, places and inequalities.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="inner">
-        <div class="eyebrow">Research projects</div>
-        <h2>Current work</h2>
-        <article class="item">
-          <h3>Transnational Organ Transplantation and Living Organ Donation</h3>
-          <p class="muted">TIED · Germany and Turkey</p>
-          <p>
-            An intersectional and ethical inquiry, decisions around organ transplantation and
-            living donation.
-          </p>
-          <p class="muted">Project details and institutional links to be added.</p>
+    <section id="research" class="soft">
+      <p class="eyebrow">Research interests</p>
+      <h2>Areas of inquiry</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Gender, Health &amp; the Body</h3>
+          <p>Gendered experiences of health, care, bodily risk and social determinants of health.</p>
+        </article>
+        <article class="card">
+          <h3>Living Organ Donation</h3>
+          <p>Donor experiences, autonomy, relational decision-making and the unequal costs of care.</p>
+        </article>
+        <article class="card">
+          <h3>Transnational Transplantation</h3>
+          <p>Migration, cross-border healthcare and the social and ethical dimensions of transplantation.</p>
+        </article>
+        <article class="card">
+          <h3>Animal Ethics &amp; Xenotransplantation</h3>
+          <p>Ethical questions about animal bodies, transplantation and human-centred approaches.</p>
         </article>
       </div>
     </section>
 
-    <section id="publications" class="alt">
-      <div class="inner">
-        <div class="eyebrow">Academic work</div>
-        <h2>Selected publications</h2>
+    <section id="projects">
+      <p class="eyebrow">Research projects</p>
+      <h2>Current and forthcoming work</h2>
+      <article class="project">
+        <p class="meta">TIED · Germany and Turkey · 2027–2030</p>
+        <h3>Transnational Organ Transplantation and Living Organ Donation: An Intersectional and Ethical Inquiry between Germany and Turkey</h3>
         <p>
-          My publications examine living organ donation, gender and migration. 
-         
+          This project examines how Turkish-origin families navigate organ
+          transplantation and living donation across Germany and Turkey.
+          It explores how decisions are shaped by relationships, ethical
+          reasoning, migration and healthcare contexts.
         </p>
-        <div class="item">
-          <h3>Peer-reviewed articles</h3>
-          <p> Demirhan, S., &amp; Köse, İ. G. (2026). “Maternal Paradox: When Nurturer Meets the Knife, Living
-            Organ Donation From Daughters to Mothers in Türkiye.” Sociology Lens, 1–17.
-            https://doi.org/10.1111/johs.70040
-          <p> Demirhan, S. (2026). Thinking about Thomas Nagel&#39;s Approach to Other Minds from a Feminist
-            perspective: What Is It Like To Be A Female Bat? NKUA Applied Philosophy Research Lab Press
-            https://doi.org/10.12681/aprlp.266
-          <p> Demirhan, S. (2025). Negotiating Autonomy: Lived Experiences of Female Living Organ Donors in
-            Turkey. Conatus – Journal of Philosophy, 10(1), 87–109. https://doi.org/10.12681/cjp.37271
-          <p> Demirhan, S. (2025). Gender in Organ Transplantation: Unpacking Inequality. Fe Dergi, 17(1),
-            211–249. https://doi.org/10.46655/federgi.1627414
-          <p> Demirhan, S. (2025). “Migration, Precarisation and Telework: An Autoethnography of a Family from
-            Turkey to Greece.” The History of the Family, 1–22.
-            https://doi.org/10.1080/1081602X.2025.2594692
-          <p> Demirhan, S. The History of Cabin Attendants Hanging Up in the Air and Gendered Construction of
-            the Profession. Akdeniz Kadın Çalışmaları ve Toplumsal Cinsiyet Dergisi 2, no. 1 (2019): 19-47.
-            https://doi.org/10.33708/ktc.502597.
-        
-          
-    
-            
-            
-            
-          
-          
-          </p>
-          <p class="muted">Publication list forthcoming.</p>
-        </div>
-      </div>
+        <p class="meta">University of Bremen · Central Research Development Fund · Principal Investigator</p>
+      </article>
+      <article class="project">
+        <p class="meta">BODYLINES · 2027–2030</p>
+        <h3>Gender, Care and Transnational Experiences in Organ Transplantation</h3>
+        <p>
+          Research on gender, care and transnational experiences in organ transplantation.
+        </p>
+        <p class="meta">Luxembourg National Research Fund (FNR) · Postdoctoral Research Lead</p>
+      </article>
+    </section>
+
+    <section id="publications" class="soft">
+      <p class="eyebrow">Selected publications</p>
+      <h2>Writing and research</h2>
+      <p class="meta">Selected publications on living organ donation, gender, migration and ethics.</p>
+
+      <article class="publication">
+        <h3>Maternal Paradox: When Nurturer Meets the Knife, Living Organ Donation From Daughters to Mothers in Türkiye</h3>
+        <p>Demirhan, S. &amp; Köse, İ. G. (2026). <em>Sociology Lens</em>.</p>
+        <a href="https://doi.org/10.1111/johs.70040" target="_blank" rel="noopener">Read article ↗</a>
+      </article>
+
+      <article class="publication">
+        <h3>Negotiating Autonomy: Lived Experiences of Female Living Organ Donors in Turkey</h3>
+        <p>Demirhan, S. (2025). <em>Conatus – Journal of Philosophy</em>, 10(1), 87–109.</p>
+        <a href="https://doi.org/10.12681/cjp.37271" target="_blank" rel="noopener">Read article ↗</a>
+      </article>
+
+      <article class="publication">
+        <h3>Gender in Organ Transplantation: Unpacking Inequality</h3>
+        <p>Demirhan, S. (2025). <em>Fe Dergi</em>, 17(1), 211–249.</p>
+        <a href="https://doi.org/10.46655/federgi.1627414" target="_blank" rel="noopener">Read article ↗</a>
+      </article>
+
+      <article class="publication">
+        <h3>Migration, Precarisation and Telework: An Autoethnography of a Family from Turkey to Greece</h3>
+        <p>Demirhan, S. (2025). <em>The History of the Family</em>.</p>
+        <a href="https://doi.org/10.1080/1081602X.2025.2594692" target="_blank" rel="noopener">Read article ↗</a>
+      </article>
+
+      <article class="publication">
+        <h3>The History of Cabin Attendants Hanging Up in the Air and Gendered Construction of the Profession</h3>
+        <p>Demirhan, S. (2019). <em>Akdeniz Kadın Çalışmaları ve Toplumsal Cinsiyet Dergisi</em>, 2(1), 19–47.</p>
+        <a href="https://doi.org/10.33708/ktc.502597" target="_blank" rel="noopener">Read article ↗</a>
+      </article>
+
+      <p><a href="cv.html#publications">See the full publication list in my CV →</a></p>
     </section>
 
     <section id="contact">
-      <div class="inner">
-        <div class="eyebrow">Get in touch</div>
-        <h2>Academic contact</h2>
-        <p>
-          I welcome conversations about research, academic exchange
-          and potential collaborations.
-        </p>
-        <p>
-          <a href="mailto:">Email me</a>
-          <span class="muted">info@sezendemirhan.com</span>
-        </p>
-        <p class="muted">
-          ORCID: 0000-0002-8999-8318 · Google Scholar · LinkedIn — profile links to be added.
-        </p>
+      <p class="eyebrow">Get in touch</p>
+      <h2>Academic contact</h2>
+      <p>I welcome conversations about research, academic exchange and potential collaborations.</p>
+      <p><a href="mailto:info@sezendemirhan.com">info@sezendemirhan.com ↗</a></p>
+      <div class="social">
+        <a href="https://scholar.google.com/citations?user=RNHhGDMAAAAJ&amp;hl=tr" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/sezen-demirhan-529598139/?locale=en" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://orcid.org/0000-0002-8999-8318" target="_blank" rel="noopener">ORCID</a>
       </div>
     </section>
   </main>
 
   <footer>
-    © <span id="year">2026</span> Sezen Demirhan · Academic website
+    © <span id="year"></span> Sezen Demirhan · Academic website
   </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
